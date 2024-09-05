@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="food.css" />
+    <link rel="stylesheet" href="../src/food.js" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </head>
+  <body
+    background="image/background2.jpg"
+    onload="bodyload()"
+    class="container-fluid"
+  >
+    <header>
+      <div class="profile">
+        <img src="../public/image/logo.jpg" alt="" class="logo" />
+        <span class="fst-italic fw-bold fs-5">Venus </span>
+      </div>
+
+      <div>
+        <nav>
+          <span><a href="#Home">HOME</a> </span>
+          <span><a href="#Menu">MENU</a></span>
+          <span><a href="#About">ABOUT</a></span>
+          <span><a href="#Contact">CONTACT</a></span>
+        </nav>
+      </div>
+
+      <div class="like">
+        <button
+          class="btn btn-warning"
+          data-bs-target="#cart"
+          data-bs-toggle="modal"
+        >
+          Login
+        </button>
+        <div class="modal fade" id="cart">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2>Cart item details</h2>
+                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">Cart details:</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <article>
+      <div class="col4"></div>
+      <div class="col4">
+        <div
+          class="carousel slide"
+          data-bs-theme="dark"
+          data-bs-ride="carousel"
+          id="banners"
+        >
+          <ol class="carousel-indicators">
+            <li data-target="#banners" data-slide-to="0" class="active"></li>
+            <li data-target="#banners" data-slide-to="1"></li>
+            <li data-target="#banners" data-slide-to="2"></li>
+            <li data-target="#banners" data-slide-to="3"></li>
+            <li data-target="#banners" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../public/image/slider1.jpg" height="300" width="700" />
+            </div>
+            <div class="carousel-item">
+              <img src="../public/image/slider2.jpg" height="300" width="700" />
+            </div>
+            <div class="carousel-item">
+              <img src="../public/image/slider3.jpg" height="300" width="700" />
+            </div>
+            <div class="carousel-item">
+              <img src="../public/image/slider4.jpg" height="300" width="700" />
+            </div>
+            <div class="carousel-item">
+              <img src="../public/image/slider5.jpg" height="300" width="700" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </article>
+
+    <div>
+      <h1
+        class="align-items-center d-flex justify-content-center"
+        style="color: brown"
+      >
+        WELL COME TO VENU'S KITCHEN
+      </h1>
+      <br />
+      <h5
+        class="align-items-center d-flex justify-content-center fw-bold fs-sevillana"
+      >
+        Fresh,Delicious Meal to Reach your optimum health and fitness
+      </h5>
+      <p class="d-flex justify-content-center align-items-center">
+        delicious, tasty, appetizing, scrumptious, yummy, juicy, succulent,
+        heavenly, inviting,<br />
+        luscious, mouthwatering, palatable, saporous, savory;<br />
+        may be divine, toothsome, and tempting.
+      </p>
+    </div>
+
+    <section>
+      <div class="card">
+        <div class="biryani">
+          <img src="../public/image/biryani-card1.jpg" alt="" id="item" />
+
+          <h6>Non-Veg-Thali</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p class="d-flex justify-content-center align-items-center">$159</p>
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CARD </span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/biryani-card2.jpg" alt="" id="item" />
+          <h6>Chiken Mandi</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/biryani-vcard2.jpg" alt="" id="item" />
+          <h6>Mushroom-Biryani</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/biryani-vcard3.jpg" alt="" id="item" />
+          <h6>Pulihora</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART </span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/biryani-card3.jpg" alt="" id="item" />
+          <h6>BamBoo-Biryani</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/biryani-vcard4.jpg" alt="" id="item" />
+          <h6>Veg-Thali</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <div class="biryani">
+          <img src="../public/image/drink-card1.jpg" alt="" id="item" />
+          <h6>PeanutButterBrownie</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/drink-card5.jpg" alt="" id="item" />
+          <h6>Orange-Juice</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/drink-card6.jpg" alt="" id="item" />
+          <h6>Watermelon</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/drink-card4.jpg" alt="" id="item" />
+          <h6>SaltedCaramelPretzel</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/drink-card3.jpg" alt="" id="item" />
+          <h6>StrawberryVanila</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/drink-card7.jpg" alt="" id="item" />
+          <h6>Mango-Juice</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <div class="biryani">
+          <img src="../public/image/noodle-card1.jpg" alt="" id="item" />
+          <h6>MOMO'S</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/noodle-card10.jpg" alt="" id="item" />
+          <h6>Pizza</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/noodle-card5.jpg" alt="" id="item" />
+          <h6>CrispyChiken</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/noodle-card6.jpg" alt="" id="item" />
+          <h6>Burger</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/noodle-card7.jpg" alt="" id="item" />
+          <h6>FrenchFries</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/noodle-card2.jpg" alt="" id="item" />
+          <h6>Noodles</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <div class="biryani">
+          <img src="../public/image/salad-card1.jpg" alt="" id="item" />
+          <h6>NaN's</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/salad-card2.jpg" alt="" id="item" />
+          <h6>ChikenCurry</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/salad-card4.jpg" alt="" id="item" />
+          <h6>MuttonCurry</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/salad-card5.jpg" alt="" id="item" />
+          <h6>Veg-Salad</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/salad-card3.jpg" alt="" id="item" />
+          <h6>PaneerCurry</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/salad-card7.jpg" alt="" id="item" />
+          <h6>FishFries</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <div class="biryani">
+          <img src="../public/image/snack-card2.jpg" alt="" id="item" />
+          <h6>BrownieWithIceCream</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/snack-card5.jpg" alt="" id="item" />
+          <h6>PanCake</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/snack-card7.jpg" alt="" id="item" />
+          <h6>IndianSweets</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/snack-card9.jpg" alt="" id="item" />
+          <h6>flavouredicecream</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/snack-card3.jpg" alt="" id="item" />
+          <h6>CaramelBread</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+        <div class="biryani">
+          <img src="../public/image/snack-card6.jpg" alt="" id="item" />
+          <h6>Donuts</h6>
+          <span class="bi bi-star-fill"
+            ><span class="bi bi-star-fill"
+              ><span class="bi bi-star-fill"
+                ><span class="bi bi-star-fill"
+                  ><span class="bi bi-star-fill"></span></span></span></span
+          ></span>
+          <p>$159</p>
+
+          <button class="btn btn-primary">
+            <span class="bi bi-arrow-bar-right"> ADD CART</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h4 class="align-items-center justify-content-center d-flex">About us</h4>
+      <div class="foot">
+        <div>
+          <span class="bi bi-whatsapp"> </span>
+          <span class="bi bi-facebook"> </span>
+          <span class="bi bi-instagram"> </span>
+          <span class="bi bi-twitter"> </span>
+        </div>
+        <div>
+          <pre>
+           Company 
+           About
+           Careers
+           Team
+           Venu's One
+           Venu's Instamart
+           Venu's Genie
+          </pre>
+        </div>
+        <div>
+          <pre>
+              Contact us 
+              Help & Support
+              Partner with us
+              Ride with us
+              Legal 
+              Terms & Conditions
+              Cookie Policy
+              Privacy Policy
+              Investor Relations
+        </pre
+          >
+        </div>
+        <div>
+          <pre>
+            We deliver to:
+            Bangalore 
+            Gurgaon 
+            Hyderabad 
+            Delhi 
+            Mumbai 
+            Pune
+        </pre
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
